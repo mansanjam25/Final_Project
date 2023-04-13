@@ -970,7 +970,7 @@ footer{
 
       .card .info p{
         font-size: 14px;
-        padding: 0px;
+        padding-bottom: 20px;
         padding-top: 10px;
         opacity : 0;
       }
