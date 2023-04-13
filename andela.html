@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- connects to the stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- connect to a Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Pattaya' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <title>Favorite Artists</title>
+</head>
+<body>
+    <a href="#content" class="skip">Skip to main content</a>
+    <header id="index">
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="claymen.html" class="nav-link">Aman</a>
+            </li>
+            <li class="nav-item">
+              <a href="shira.html" class="nav-link">Shira</a>
+            </li>
+            <li class="nav-item">
+              <a href="andela.html" class="nav-link current">Andela</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+
+    </header>
+    <main id="content">
+      <div class="backdrop">
+        <!-- <h1>Claymen</h1> -->
+        <div class="introcard">
+          <div class="introimage">
+            <img src="images/andela.jpg" alt="Potrait of Andela Jankovic">
+            <div class="contact">
+              <div class="instagram">
+                <a href="https://www.instagram.com/rawdraws/"><i class="fa fa-instagram"></i></a>
+              </div>
+              <div class="website">
+                <a href="https://www.behance.net/jankovicandjela?locale=en_US"><i class="fa fa-safari"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="about">
+            <h2>About the Artist</h2>
+            <p>It was back in high school that Anđela Janković thought drawing was something purely for her own enjoyment, "often in shabby notebooks during classes". It was something the Serbian designer and illustrator perceived as an "indulgent, somewhat selfish activity" rather than anything she could have turned into a career.</p>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="intro2">
+        <h2>My Favorite Artworks</h2>
+      <p>I have mentioned below 3 of my favorite artworks from this artist's collection. And, I have also taken the liberty of elaborating on what it is about these artworks that piques my interest and keeps me coming back for more.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="image">
+            <img src="images/2/a6.PNG" alt="Painting of a person holding a tropphy">
+          </div>
+          <div class="info">
+            <h3>"Everyone wins"</h3>
+            <p>This artwork cleverly signifies that your mind and your ability to think is what makes you a winner, by making a person hold a trophy shaped as his own head.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="images/2/a2.PNG" alt="Painting of a person bending backwards">
+          </div>
+            <div class="info">
+              <h3>"Nothing Serious"</h3>
+              <p>This artwork depicts a girl bending backwards. To retain the fun element, vibrant shades of pink and blue have been used. Overall, the whole piece looks very playful.</p>
+            </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="images/2/a3.PNG" alt="Painting of a person sitting">
+          </div>
+            <div class="info">
+              <h3>"Speck of dust"</h3>
+                <p>A notable aspect of this piece is the way the artist skilfully distorts the proportions of the human characters to create a sense of fun and lightheartedness. </p>
+            </div>
+        </div>
+      </div>
+
+      <div class="carousel">
+        <div class="carouseltext">
+          <h2>Other Artworks</h2>
+        <p>Apart from my top 3 favorite artworks, I have put some other artworks that I highly admire. I really like how this artist plays so creatively with different human activites. </p>
+        </div>
+        <section id="slider">
+          <input type="radio" name="slider" id="s1">
+            <input type="radio" name="slider" id="s2">
+              <input type="radio" name="slider" id="s3" checked>
+                <input type="radio" name="slider" id="s4">
+                 <input type="radio" name="slider" id="s5">
+  
+        <label for="s1" id="slide1">
+          <img src="images/2/a4.PNG" alt="A person's head with red background">
+        </label>
+        <label for="s2" id="slide2">
+          <img src="images/2/a5.PNG" alt="A girl stretching her arms and legs">
+        </label>
+        <label for="s3" id="slide3">
+          <img src="images/2/a10.PNG" alt="A sad girl">
+        </label>
+        <label for="s4" id="slide4">
+          <img src="images/2/a9.PNG" alt="A girl looking down on a pink background">
+        </label>
+        <label for="s5" id="slide5">
+          <img src="images/2/a7.PNG" alt="A person with her head shaped as a brain">
+        </label>
+        </section>
+      </div>
+      
+
+      <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        })
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () =>{
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        }))
+      </script>
+    </main>
+  </body>
+    <footer>
+        <p class="thanks">
+          Thanks for visiting! <i></i>
+        </p>
+        <p>@SI 539 Final Porject</p>
+      </footer>
+
+</html>
