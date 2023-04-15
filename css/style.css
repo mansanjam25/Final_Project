@@ -367,17 +367,20 @@ h2{
     padding-bottom: 20px;
 }
 
+
 .artist1 img{
     border-radius: 40px;
-    border: 5px solid #ffb0b0;
-    outline: 4px solid #f2ea96;
+    box-shadow:
+    0 0 0 5px #f2ea96,
+    0 0 0 9px #ffb0b0;
     padding: 5px;
 }
 
 .artist2 img{
     border-radius: 40px;
-    border: 5px solid #ffb0b0;
-    outline: 4px solid #f2ea96;
+    box-shadow:
+    0 0 0 5px #f2ea96,
+    0 0 0 9px #ffb0b0;
     padding: 5px;
 }
 
@@ -885,7 +888,7 @@ footer{
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 30px;
-        min-height: 700px;
+        min-height: 650px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: none;
