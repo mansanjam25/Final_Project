@@ -888,7 +888,7 @@ footer{
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 30px;
-        min-height: 650px;
+        min-height: 700px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: none;
