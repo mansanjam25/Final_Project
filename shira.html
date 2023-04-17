@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- connects to the stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- connect to a Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Pattaya' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <title>Favorite Artists</title>
+</head>
+<body>
+    <header id="index">
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="claymen.html" class="nav-link">Aman</a>
+            </li>
+            <li class="nav-item">
+              <a href="shira.html" class="nav-link current">Shira</a>
+            </li>
+            <li class="nav-item">
+              <a href="andela.html" class="nav-link">Andela</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+
+    </header>
+    <main id="content">
+      <div class="backdrop">
+        <!-- <h1>Claymen</h1> -->
+        <div class="introcard">
+          <div class="introimage">
+            <img src="images/shira.jpg" alt="Potrait of Shira Barzilay">
+            <div class="contact">
+              <div class="instagram">
+                <a href="https://www.instagram.com/koketit/" title="Follow Shira's art on Instagram"><i class="fa fa-instagram"></i></a>
+              </div>
+              <div class="website">
+                <a href="https://www.koketit.com/" title="View Shira's website"><i class="fa fa-safari"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="about">
+            <h2>About the Artist</h2>
+            <p>Shira Barzilay is an artist whose iconic work is globally recognized through her influential @koketit platform.  The Tel Aviv based artist Instagram account counts half a million followers, and her unique and captivating drawing style and mixed media art has brought her to the attention of some of the world’s leading brands. This includes art collaborations with Cartier, Elizabeth Arden, Vogue Portugal, Harper’s Bazaar, N’kd, Lenovo, Revlon, and most recently a design collaboration with Zara. Her distinctive style is recognized for it’s evocative and philosophical musings on our world. 
+                 “The world is her canvas”</p>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="intro2">
+        <h2>My Favorite Artworks</h2>
+      <p>I have mentioned below 3 of my favorite artworks from this artist's collection. And, I have also taken the liberty of elaborating on what it is about these artworks that piques my interest and keeps me coming back for more.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="image">
+            <img src="images/3/b1.PNG" alt="Painting of 2 ladies on a door">
+          </div>
+          <div class="info">
+            <h3>"Come in"</h3>
+            <p>I really like how the artist has made use of the handles and knobs on the door flawlessly in her composition. It is blending very well the 2 painted ladies.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="images/3/b2.PNG" alt="Human face formed out of a staircase">
+          </div>
+            <div class="info">
+              <h3>"Stare Case"</h3>
+              <p>This is one of my favorite pieces. It's amazing how the artist has converted a fully inanimate object like a staircase into such an evident face with just a few brush strokes.</p>
+            </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="images/3/b5.PNG" alt="A woman made from a plastic bag">
+          </div>
+            <div class="info">
+              <h3>"She is not disposable"</h3>
+                <p>This artwork is very unique since here instead of using an architectural element, the artist has used a very mundane object like a plastic bag and turned it into a woman's silhouette.</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="carousel">
+        <div class="carouseltext">
+          <h2>Other Artworks</h2>
+        <p>Apart from my top 3 favorite artworks, I have put some other artworks that I highly admire. I really like how this artist imagines different human abstractions in her surroundings. </p>
+        </div>
+        <section id="slider">
+          <input type="radio" name="slider" id="s1">
+            <input type="radio" name="slider" id="s2">
+              <input type="radio" name="slider" id="s3" checked>
+                <input type="radio" name="slider" id="s4">
+                 <input type="radio" name="slider" id="s5">
+  
+        <label for="s1" id="slide1">
+          <img src="images/3/b3.PNG" alt="Faces formed out of arches in a corridor">
+        </label>
+        <label for="s2" id="slide2">
+          <img src="images/3/b7.PNG" alt="A man with hair made from the tree branches">
+        </label>
+        <label for="s3" id="slide3">
+          <img src="images/3/b4.PNG" alt="Faces formed on curtains in a corridor">
+        </label>
+        <label for="s4" id="slide4">
+          <img src="images/3/b8.PNG" alt="Face formed out of girl's tshirt">
+        </label>
+        <label for="s5" id="slide5">
+          <img src="images/3/b6.PNG" alt="A person's face formed out of a staircase">
+        </label>
+        </section>
+      </div>
+      
+
+      <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        })
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () =>{
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        }))
+      </script>
+    </main>
+    <footer>
+      <p class="thanks">
+        Thanks for visiting! <i></i>
+      </p>
+      <p>@SI 539 Final Porject</p>
+    </footer>
+  </body>
+
+</html>
